@@ -1,0 +1,70 @@
+.form-example {
+    margin: 25px auto;
+    width: 385px;
+}
+
+.form-example__item {
+    margin-top: 15px;
+}
+
+.form-example__item-caption {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-example__item-value {
+    outline: none;
+    border: 1px solid #7499e7;
+    border-radius: 5px;
+    background-color: white;
+    height: 35px;
+    width: 100%;
+}
+
+.form-example__item-value[type="radio"] {
+    width: 15px;
+    height: 15px;
+}
+
+.form-example__item-value[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+
+input[type="checkbox"]:checked ~ .agree-success {
+    display: block;
+}
+
+input[type="checkbox"]:checked ~ .agree-error{
+    display: none;
+}
+
+.agree-success {
+    color: green;
+    display: none;
+}
+
+.agree-error {
+    color: red;
+}
+
+.form-example__item-value[type="submit"] {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: #7499e7;
+    color: white;
+    line-height: 34px;
+}
+
+.form-example__item-value[type="submit"]:hover {
+    background-color: #5f87e0;
+}
+
+.form-example__item-value[type="submit"]:focus {
+    line-height: 36px;
+    box-shadow: inset 0 2px 7px -2px #6b6a6a;
+}
+

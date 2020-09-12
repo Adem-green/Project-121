@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<form action="/" method="get" class="form-example" onsubmit="return true;">
+    <div class="form-example__item">
+        <label for="input-1" class="form-example__item-caption">Имя</label>
+        <input type="text" name="first_name" id="input-1" class="form-example__item-value"/>
+    </div>
+
+    <div class="form-example__item">
+        <label for="input-2" class="form-example__item-caption">Фамилия</label>
+        <input type="text" name="last_name" id="input-2" class="form-example__item-value"/>
+    </div>
+
+    <div class="form-example__item">
+        <label for="input-3" class="form-example__item-caption">Логин</label>
+        <input type="text" name="login" id="input-3" class="form-example__item-value"/>
+    </div>
+
+    <div class="form-example__item">
+        <label for="input-4" class="form-example__item-caption">Пароль</label>
+        <input type="password" name="password" id="input-4" class="form-example__item-value"/>
+    </div>
+
+    <div class="form-example__item">
+        <span>Пол:</span>
+        <input type="radio" name="gender" value="male" id="input-5" class="form-example__item-value"/>
+        <label for="input-5" class="form-example__item-caption">Мужской</label>
+        <input type="radio" name="gender" value="female" id="input-6" class="form-example__item-value"/>
+        <label for="input-6" class="form-example__item-caption">Женский</label>
+    </div>
+
+    <div class="form-example__item">
+        <span>Интересы:</span>
+        <br/>
+        <input type="checkbox" name="interests" value="football" id="input-7" class="form-example__item-value"/>
+        <label for="input-7" class="form-example__item-caption">Футбол</label>
+        <br/>
+        <input type="checkbox" name="interests" value="basketball" id="input-8" class="form-example__item-value"/>
+        <label for="input-8" class="form-example__item-caption">Баскетбол</label>
+        <br/>
+        <input type="checkbox" name="interests" value="volleyball" id="input-9" class="form-example__item-value"/>
+        <label for="input-9" class="form-example__item-caption">Волейбол</label>
+    </div>
+
+    <div class="form-example__item">
+        <input type="checkbox" name="agree" value="true" id="input-10" required="required" class="form-example__item-value"/>
+        <label for="input-10" class="form-example__item-caption">Я принимаю условия лицензионного соглашения</label>
+        <div class="agree-success">Вы приняли условия лицензионного соглашения</div>
+        <div class="agree-error">Вы не приняли условия лицензионного соглашения</div>
+    </div>
+
+    <div class="form-example__item">
+        <input type="submit" value="Отправить" class="form-example__item-value"/>
+    </div>
+</form>
+</body>
+</html>
